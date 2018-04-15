@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Prathamesh More</title>
+	<meta charset="utf-8" />
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'personal/css/bootstrap.min.css' %}" type = "text/css"/>
+	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+	
+	<style type="text/css">
+		html,
+		body {
+		  height:100%
+		}
+	</style>
+</head>
+
+<body class="body" style="background-color:#0E0E0E  ">
+	<div class="container-fluid" style="min-height:95%; ">
+		<div class="row">
+			  <div class="col-sm-2">
+				  <br>
+				  <center>
+					<img src="{% static 'personal/img/bin.png' %}" class="responsive-img" style='max-height:800px;' alt="face."height="200" width="800">
+					</center>
+				 
+			  </div>
+			  <div class="col-sm-9">
+				  <br>
+				  <left>
+				  <font size="7" font color="#FF0033" font align="left">
+<br>Enjoy the learning experience</font>
+				<<video width="300" height="200" controls>
+  <source src="{% static 'personal/vid/video1.mp4' %}" type="video/mp4">
+Your browser does not support the video tag.
+</video>  <div><p word-spacing: 3000px ;><h2><hr> ...........................................................................................PLAY this^</h2></p></div>
+				
+					
+				 </left>
+			  </div>
+		</div>
+		<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">Prathamesh More</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/PROGRAMMING">What is PROGRAMMING</a></li>
+      <li><a href="/cpp">C++</a></li>
+      <li><a href="/javaa">JAVA</a></li>
+      <li><a href="/PYTHONN">PYTHON</a></li>
+    </ul>
+  </div>
+</nav>
+
+		<div class="row">
+		  <div class="col-sm-2">
+		  <br>
+
+		  <br>
+		   <!-- Great, til you resize. -->
+			<!--<div class="well bs-sidebar affix" id="sidebar" style="background-color:#fff">-->
+			<div class="well bs-sidebar" id="sidebar" style="background-color:#FF0033">
+			  <ol class="nav nav-pills nav-stacked">
+				<li><a href='/'><h2>Home</h2></a></li>
+				<li><a href='/blog/'><h2>Blog</h2></a></li>
+				<li><a href='/contact/'><h2>contact</h2></a></li>  
+			  </ol>
+			</div> <!--well bs-sidebar affix-->
+		  </div> <!--col-sm-2-->
+		  <div class="col-sm-10">
+		  
+			<div class='container-fluid'>
+			<br><br>
+			   {% block content %}
+			   {% endblock %}	
+			     {% block ppp %}
+			   {% endblock %}	
+			
+			</div>
+		  </div>
+		</div> 
+	</div>
+	<footer>
+		<div class="container-fluid" style='margin-left:15pxcolor:#E74C3C'>
+			<p color: #E74C3C>
+			<h3><a href="/callme" target="blank">Call me</a> | <a href="https://www.facebook.com/profile.php?id=100005424135114" target="blank">facebook</a> | <a href="https://www.instagram.com/prathamesh029" target="blank">Instagram</a> | <a href="http://www.google.com" target="blank">Google+</a></h3></p>
+		</div>
+	</footer>	
+	
+	
+</body>
+
+</html>
